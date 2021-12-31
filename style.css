@@ -45,3 +45,12 @@ body{
 .timer {
     text-shadow: 10px 3px black;
 }
+
+.big_countdown {
+    font-size: 11rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    
+    
