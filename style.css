@@ -41,3 +41,7 @@ body{
 .count {
     color: white;
 }
+
+.timer {
+    text-shadow: 10px 3px black;
+}
