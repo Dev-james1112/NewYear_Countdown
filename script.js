@@ -2,7 +2,8 @@ const dayEl = document.getElementById('day')
 const hoursEl = document.getElementById('hours')
 const minsEl = document.getElementById('mins')
 const secondsEl = document.getElementById('seconds')
-const bigEl = document.getElementByClass('big_countdown')
+const bigEl = document.getElementById('big_countdown')
+
 function countDown(){
     const newYear = new Date(2022, 0, 1)
     const current = new Date()
@@ -22,10 +23,11 @@ function countDown(){
         if (hours == 00) {
             if (mins == 00) {
                 if (seconds == 10) {
-                    dayEl.style.visibility = "hidden";
-                    hoursEl.style.visibility = "hidden";
-                    minsEl.style.visibility = "hidden";
-                    secondsEl.style.visibility = "hidden";
+                    dayEl.style.display = "none";
+                    hoursEl.style.display = "none";
+                    minsEl.style.display = "none";
+                    secondsEl.style.display = "none";
+                    bigEl.style.display = " ";
                     bigEl.innerHTML = formatTime(seconds)
                 }
             }
