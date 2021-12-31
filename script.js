@@ -14,7 +14,7 @@ function countDown(){
     const hours = Math.floor( diffTime/(1000*3600) %24)
     const mins = Math.floor( diffTime/(1000*60) %60)
     const seconds = Math.floor( diffTime/(1000) %60)
-   
+    const shows = false
     dayEl.innerHTML = formatTime(days)
     hoursEl.innerHTML = formatTime(hours)
     minsEl.innerHTML = formatTime(mins)
@@ -28,12 +28,14 @@ function countDown(){
                     minsEl.style.display = "none";
                     secondsEl.style.display = "none";
                     bigEl.style.display = " ";
-                    bigEl.innerHTML = formatTime(seconds)
+                    shows = true;
                 }
             }
         }
     }
-    
+    if (shows) {
+        bigEl.innerHTML = formatTime(seconds)
+    }
 }
 function formatTime(time){
     return time < 10 ? (`0${time}`) : (time);
