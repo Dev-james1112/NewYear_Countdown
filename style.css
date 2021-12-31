@@ -8,7 +8,7 @@ h1 {
 }
 
 body{
-    background-image: url(https://images.unsplash.com/photo-1521478413868-1bbd982fa4a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG5ldyUyMHllYXJ8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://hf-s3.hotelfriend.com/pages/18/new-years-eve-in-leipzig-58574.jpg);
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -36,4 +36,8 @@ body{
 }
 .count span{
     font-size: 1.4rem;
+}
+
+.count {
+    color: white;
 }
