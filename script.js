@@ -18,11 +18,14 @@ function countDown(){
     hoursEl.innerHTML = formatTime(hours)
     minsEl.innerHTML = formatTime(mins)
     secondsEl.innerHTML = formatTime(seconds)
-    if (dayEl == 00) {
-        if (hoursE1 == 00) {
-            if (minsE1 == 00) {
-                if (secondsE1 == 10) {
-                    alert('fasdf')
+    if (days == 00) {
+        if (hours == 00) {
+            if (mins == 00) {
+                if (seconds == 10) {
+                    days.style.visibility = "hidden";
+                    hours.style.visibility = "hidden";
+                    mins.style.visibility = "hidden";
+                    seconds.style.visibility = "hidden";
                 }
             }
         }
