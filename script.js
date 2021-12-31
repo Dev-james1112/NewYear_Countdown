@@ -18,6 +18,16 @@ function countDown(){
     hoursEl.innerHTML = formatTime(hours)
     minsEl.innerHTML = formatTime(mins)
     secondsEl.innerHTML = formatTime(seconds)
+    if (dayEl == 00) {
+        if (hoursE1 == 00) {
+            if (minsE1 == 00) {
+                if (secondsE1 == 10) {
+                    alert('fasdf')
+                }
+            }
+        }
+    }
+    
 }
 function formatTime(time){
     return time < 10 ? (`0${time}`) : (time);
