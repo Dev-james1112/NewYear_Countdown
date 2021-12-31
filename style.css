@@ -9,7 +9,7 @@ h1 {
 }
 
 body{
-    background-image: url(https://hf-s3.hotelfriend.com/pages/18/new-years-eve-in-leipzig-58574.jpg);
+    background-color: #32386d;
     font-family: "Poppins", sans-serif;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body{
 .big_countdown {
     font-size: 11rem;
     align-items: center;
-    display: flex;
+    display: none;
     justify-content: center;
     margin-top: 0px;
     font-weight:bold;
@@ -58,7 +58,12 @@ body{
     background-color: black;
     border-radius: 10000000000000000px;
     margin: 0px;
-    width: 145px;
-    opacity: 0%;
+    width: 400px;
+    height: 400px;
+    padding-left: 90px;
+    padding-top: 70px;
 }
     
+#iframe {
+    display: none;
+}
