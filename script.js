@@ -6,7 +6,7 @@ const bigEl = document.getElementById('iframe')
 const divEl = document.getElementById('b')
 const iframeEl = document.getElementById("iframe")
 function countDown(){
-    const newYear = new Date(2022, 0, 1)
+    const newYear = new Date(2023, 0, 1)
     const current = new Date()
 
     const diffTime = Math.abs(newYear-current)
